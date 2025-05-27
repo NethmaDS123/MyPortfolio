@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 
 export default function About() {
@@ -13,7 +12,7 @@ export default function About() {
           About Me
         </h2>
         <p className="text-gray-200 text-lg text-center mb-16">
-          A little bit about myself and what I'm up to
+          A little bit about myself and what I&apos;m up to
         </p>
 
         <div className="flex flex-col md:flex-row gap-12">
@@ -94,23 +93,23 @@ export default function About() {
           <div className="md:w-2/3">
             <div className="space-y-8">
               <p className="text-xl text-gray-200 leading-relaxed">
-                I'm a Software Engineer with nearly 4 years of experience across
-                web, mobile, and backend, machine learning, DevOps, and
-                cybersecurity. I'm graduating with a BSc in Computer Science
-                from the University of Westminster in July 2025.
+                I&apos;m a Software Engineer with nearly 4 years of experience
+                across web, mobile, and backend, machine learning, DevOps, and
+                cybersecurity. I&apos;m graduating with a BSc in Computer
+                Science from the University of Westminster in July 2025.
               </p>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Throughout my journey, I've worked on diverse projects ranging
-                from AI-driven SaaS platforms and data-driven mobile apps to
-                cloud deployments and security-focused solutions. I thrive on
-                solving complex problems, building robust systems, and
+                Throughout my journey, I&apos;ve worked on diverse projects
+                ranging from AI-driven SaaS platforms and data-driven mobile
+                apps to cloud deployments and security-focused solutions. I
+                thrive on solving complex problems, building robust systems, and
                 continuously learning new technologies to stay at the leading
                 edge of the field.
               </p>
 
               <div className="pt-8 border-t border-gray-800">
                 <h3 className="text-2xl font-bold mb-6 text-white">
-                  What I'm Up To Right Now
+                  What I&apos;m Up To Right Now
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
@@ -160,13 +159,13 @@ export default function About() {
 
               <div className="pt-8 border-t border-gray-800">
                 <h3 className="text-2xl font-bold mb-6 text-white">
-                  When I'm Not Coding
+                  When I&apos;m Not Coding
                 </h3>
                 <p className="text-gray-200 text-lg leading-relaxed">
-                  Outside of coding, I love watching anime, UFC, and boxing. I'm
-                  passionate about working out and reading, and I also work as a
-                  part-time chef. I'm also still exploring everything London and
-                  the UK has to offer.
+                  Outside of coding, I love watching anime, UFC, and boxing.
+                  I&apos;m passionate about working out and reading, and I also
+                  work as a part-time chef. I&apos;m also still exploring
+                  everything London and the UK has to offer.
                 </p>
               </div>
             </div>

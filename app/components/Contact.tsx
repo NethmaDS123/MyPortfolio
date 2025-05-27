@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Contact() {
   return (
     <section id="contact" className="py-20 px-8 bg-black text-white">

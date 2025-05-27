@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
@@ -61,9 +60,9 @@ export default function Hero() {
 
         <h2 className="text-2xl md:text-4xl text-gray-200 mb-8 font-semibold"></h2>
         <p className="text-xl md:text-2xl mb-12 text-gray-200 leading-relaxed max-w-3xl mx-auto">
-          I'm a software developer specializing in building exceptional digital
-          experiences. Currently, I'm focused on building accessible,
-          human-centered products with modern technologies.
+          I&apos;m a software developer specializing in building exceptional
+          digital experiences. Currently, I&apos;m focused on building
+          accessible, human-centered products with modern technologies.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
