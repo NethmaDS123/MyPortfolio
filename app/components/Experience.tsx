@@ -65,55 +65,55 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-8 bg-black text-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 text-center tracking-tight">
+    <section id="experience" className="py-16 px-6 bg-black text-white">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center tracking-tight">
           My Experience
         </h2>
-        <p className="text-gray-200 text-lg text-center mb-16">
+        <p className="text-gray-200 text-sm text-center mb-12">
           Professional journey and achievements
         </p>
 
-        <div className="space-y-16">
+        <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div key={index} className="relative">
               {/* Timeline dot and line */}
               {index < experiences.length - 1 && (
-                <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-800/50 via-emerald-600/50 to-emerald-800/50"></div>
+                <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-800/50 via-emerald-600/50 to-emerald-800/50"></div>
               )}
-              <div className="absolute left-8 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-300 transform -translate-x-1/2 z-10 ring-4 ring-black"></div>
+              <div className="absolute left-6 top-0 w-3 h-3 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-300 transform -translate-x-1/2 z-10 ring-4 ring-black"></div>
 
-              <div className="flex flex-col md:flex-row gap-8 ml-16">
+              <div className="flex flex-col md:flex-row gap-6 ml-12">
                 <div className="md:w-1/3">
-                  <h3 className="text-2xl font-bold text-white mb-2">
+                  <h3 className="text-xl font-bold text-white mb-1">
                     {exp.title}
                   </h3>
-                  <p className="text-xl text-emerald-400 font-medium mb-2">
+                  <p className="text-lg text-emerald-400 font-medium mb-1">
                     {exp.company}
                   </p>
-                  <p className="text-lg text-gray-200 mb-2">{exp.period}</p>
-                  <p className="text-lg text-gray-300">{exp.location}</p>
+                  <p className="text-sm text-gray-200 mb-1">{exp.period}</p>
+                  <p className="text-sm text-gray-300">{exp.location}</p>
                 </div>
                 <div className="md:w-2/3">
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {exp.description.map((item, i) => (
                       <div
                         key={i}
-                        className="flex group hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300"
+                        className="flex group hover:bg-gray-900/50 p-2 rounded-lg transition-all duration-300"
                       >
                         <div className="mr-3 text-emerald-400 mt-1">▹</div>
-                        <p className="text-gray-200 text-lg leading-relaxed">
+                        <p className="text-gray-200 text-sm leading-relaxed">
                           {item}
                         </p>
                       </div>
                     ))}
                   </div>
                   {exp.technologies.length > 0 && (
-                    <div className="flex flex-wrap gap-3 mt-6">
+                    <div className="flex flex-wrap gap-2 mt-4">
                       {exp.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-4 py-2 bg-gray-800 text-gray-200 rounded-lg text-base font-medium hover:bg-gray-700 hover:text-white transition-all duration-300"
+                          className="px-3 py-1 bg-gray-800 text-gray-200 rounded-lg text-xs font-medium hover:bg-gray-700 hover:text-white transition-all duration-300"
                         >
                           {tech}
                         </span>
@@ -128,24 +128,24 @@ export default function Experience() {
 
         {/* Awards Section */}
         {awards.length > 0 && (
-          <div className="mt-24">
-            <h3 className="text-3xl font-bold mb-12 text-center text-white">
+          <div className="mt-16">
+            <h3 className="text-xl font-bold mb-8 text-center text-white">
               Awards & Recognition
             </h3>
             {awards.map((award, index) => (
               <div
                 key={index}
-                className="bg-gray-900/80 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="bg-gray-900/80 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                <div className="flex flex-col md:flex-row justify-between md:items-center mb-4">
-                  <h4 className="text-2xl font-bold text-white mb-2 md:mb-0">
+                <div className="flex flex-col md:flex-row justify-between md:items-center mb-3">
+                  <h4 className="text-lg font-bold text-white mb-2 md:mb-0">
                     {award.title}
                   </h4>
-                  <div className="text-emerald-400 text-lg font-medium">
+                  <div className="text-emerald-400 text-sm font-medium">
                     {award.location} - {award.date}
                   </div>
                 </div>
-                <p className="text-gray-200 text-lg leading-relaxed">
+                <p className="text-gray-200 text-sm leading-relaxed">
                   {award.description}
                 </p>
               </div>

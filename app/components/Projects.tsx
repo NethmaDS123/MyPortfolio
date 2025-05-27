@@ -156,36 +156,36 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 px-8 bg-black text-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
+    <section id="projects" className="py-16 px-6 bg-black text-white">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">
           Featured Projects
         </h2>
-        <p className="text-gray-400 text-center mb-16">
+        <p className="text-gray-400 text-sm text-center mb-12">
           A showcase of my technical abilities and problem-solving skills
         </p>
 
         {/* Featured Projects */}
-        <div className="space-y-24 mb-24">
+        <div className="space-y-16 mb-16">
           {featuredProjects.map((project, index) => (
             <div
               key={index}
               className="bg-gradient-to-br from-gray-900 to-black p-[1px] rounded-lg"
             >
-              <div className="bg-black rounded-lg p-8">
-                <div className="flex flex-col md:flex-row justify-between md:items-center mb-6">
-                  <h3 className="text-3xl font-bold text-white hover:text-gray-300 transition-colors mb-2 md:mb-0">
+              <div className="bg-black rounded-lg p-6">
+                <div className="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                  <h3 className="text-2xl font-bold text-white hover:text-gray-300 transition-colors mb-2 md:mb-0">
                     {project.title}
                   </h3>
-                  <div className="text-gray-400 hover:text-gray-300 transition-colors text-lg">
+                  <div className="text-gray-400 hover:text-gray-300 transition-colors text-base">
                     {project.subtitle}
                   </div>
                 </div>
-                <div className="text-gray-500 mb-8 text-lg">
+                <div className="text-gray-500 mb-6 text-sm">
                   {project.location} | {project.period}
                 </div>
 
-                <div className="space-y-4 mb-8">
+                <div className="space-y-3 mb-6">
                   {project.description.map((item, i) => (
                     <div
                       key={i}
@@ -194,18 +194,18 @@ export default function Projects() {
                       <div className="mr-3 text-gray-400 group-hover:text-gray-300">
                         ▹
                       </div>
-                      <p className="text-gray-300 group-hover:text-white text-lg">
+                      <p className="text-gray-300 group-hover:text-white text-base">
                         {item}
                       </p>
                     </div>
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-3 mb-8">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-4 py-2 bg-gray-800/50 text-gray-300 rounded-full text-sm hover:bg-gray-700/50 hover:text-white transition-all duration-300"
+                      className="px-3 py-1 bg-gray-800/50 text-gray-300 rounded-full text-xs hover:bg-gray-700/50 hover:text-white transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -310,44 +310,44 @@ export default function Projects() {
 
         {/* Other Projects */}
         <div>
-          <h3 className="text-2xl font-bold mb-8 text-center">
+          <h3 className="text-xl font-bold mb-6 text-center">
             Other Noteworthy Projects
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {otherProjects.map((project, index) => (
               <div
                 key={index}
                 className="group bg-gradient-to-br from-gray-900 to-black p-[1px] rounded-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-300"
               >
-                <div className="bg-black rounded-lg p-6 h-full">
-                  <div className="flex justify-between items-center mb-4">
-                    <h4 className="text-xl font-bold text-white group-hover:text-gray-300 transition-colors">
+                <div className="bg-black rounded-lg p-4 h-full">
+                  <div className="flex justify-between items-center mb-3">
+                    <h4 className="text-lg font-bold text-white group-hover:text-gray-300 transition-colors">
                       {project.title}
                     </h4>
-                    <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">
+                    <div className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors">
                       {project.subtitle}
                     </div>
                   </div>
-                  <div className="text-gray-500 mb-4">
+                  <div className="text-gray-500 mb-3 text-xs">
                     {project.location} | {project.period}
                   </div>
 
-                  <div className="space-y-3 mb-6">
+                  <div className="space-y-2 mb-4">
                     {project.description.map((item, i) => (
                       <p
                         key={i}
-                        className="text-gray-300 group-hover:text-white transition-colors"
+                        className="text-gray-300 group-hover:text-white transition-colors text-sm"
                       >
                         {item}
                       </p>
                     ))}
                   </div>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-gray-800/50 text-gray-300 rounded-full text-sm hover:bg-gray-700/50 hover:text-white transition-all duration-300"
+                        className="px-2 py-1 bg-gray-800/50 text-gray-300 rounded-full text-xs hover:bg-gray-700/50 hover:text-white transition-all duration-300"
                       >
                         {tech}
                       </span>
@@ -404,16 +404,16 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-gray-300 hover:text-white"
+            className="inline-flex items-center text-gray-300 hover:text-white text-sm"
           >
             <span className="mr-2">View More Projects on GitHub</span>
             <svg
-              className="w-5 h-5"
+              className="w-4 h-4"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"

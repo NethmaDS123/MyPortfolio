@@ -2,30 +2,30 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-8 bg-black text-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+    <section id="contact" className="py-16 px-6 bg-black text-white">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
           Get In Touch
         </h2>
-        <p className="text-gray-400 text-center mb-16">
+        <p className="text-gray-400 text-sm text-center mb-12">
           Have a project in mind or just want to chat? Feel free to reach out!
         </p>
 
         <div className="flex flex-col items-center justify-center">
-          <div className="mb-12 w-full max-w-md">
+          <div className="mb-8 w-full max-w-md">
             <div className="bg-gradient-to-br from-gray-900 to-black p-[1px] rounded-lg">
-              <div className="bg-black rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-6 relative pb-2">
+              <div className="bg-black rounded-lg p-4">
+                <h3 className="text-lg font-bold mb-4 relative pb-2">
                   Contact Info
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700/30 to-transparent"></div>
                 </h3>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <a
                     href="mailto:dsnethma@gmail.com"
                     className="flex items-center group hover:bg-gray-900/50 p-2 rounded-lg transition-all duration-300"
                   >
                     <svg
-                      className="w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-300 transition-colors"
+                      className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-300 transition-colors"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ export default function Contact() {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       ></path>
                     </svg>
-                    <span className="text-gray-300 group-hover:text-white transition-colors">
+                    <span className="text-gray-300 group-hover:text-white text-sm">
                       dsnethma@gmail.com
                     </span>
                   </a>
@@ -47,7 +47,7 @@ export default function Contact() {
                     className="flex items-center group hover:bg-gray-900/50 p-2 rounded-lg transition-all duration-300"
                   >
                     <svg
-                      className="w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-300 transition-colors"
+                      className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-300 transition-colors"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -60,13 +60,13 @@ export default function Contact() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       ></path>
                     </svg>
-                    <span className="text-gray-300 group-hover:text-white transition-colors">
+                    <span className="text-gray-300 group-hover:text-white text-sm">
                       +447873649775
                     </span>
                   </a>
                   <div className="flex items-center group hover:bg-gray-900/50 p-2 rounded-lg transition-all duration-300">
                     <svg
-                      className="w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-300 transition-colors"
+                      className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-300 transition-colors"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -85,7 +85,7 @@ export default function Contact() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       ></path>
                     </svg>
-                    <span className="text-gray-300 group-hover:text-white transition-colors">
+                    <span className="text-gray-300 group-hover:text-white text-sm">
                       London, UK
                     </span>
                   </div>
@@ -96,12 +96,12 @@ export default function Contact() {
 
           <div className="w-full max-w-md">
             <div className="bg-gradient-to-br from-gray-900 to-black p-[1px] rounded-lg">
-              <div className="bg-black rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-6 relative pb-2">
+              <div className="bg-black rounded-lg p-4">
+                <h3 className="text-lg font-bold mb-4 relative pb-2">
                   Connect With Me
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700/30 to-transparent"></div>
                 </h3>
-                <div className="flex space-x-6 justify-center">
+                <div className="flex space-x-4 justify-center">
                   <a
                     href="https://github.com"
                     target="_blank"
@@ -109,7 +109,7 @@ export default function Contact() {
                     className="bg-gray-900/50 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
                   >
                     <svg
-                      className="w-6 h-6"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -128,7 +128,7 @@ export default function Contact() {
                     className="bg-gray-900/50 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
                   >
                     <svg
-                      className="w-6 h-6"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -143,7 +143,7 @@ export default function Contact() {
                     className="bg-gray-900/50 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
                   >
                     <svg
-                      className="w-6 h-6"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"

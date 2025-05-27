@@ -6,20 +6,20 @@ export default function About() {
   const [pdfLoaded, setPdfLoaded] = useState(false);
 
   return (
-    <section id="about" className="py-20 px-8 bg-black text-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 text-center tracking-tight">
+    <section id="about" className="py-16 px-6 bg-black text-white">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center tracking-tight">
           About Me
         </h2>
-        <p className="text-gray-200 text-lg text-center mb-16">
+        <p className="text-gray-200 text-base text-center mb-12">
           A little bit about myself and what I&apos;m up to
         </p>
 
-        <div className="flex flex-col md:flex-row gap-12">
+        <div className="flex flex-col md:flex-row gap-8">
           {/* Left column - Resume */}
           <div className="md:w-1/3">
-            <div className="bg-gray-900/80 p-8 rounded-xl shadow-xl">
-              <h3 className="text-2xl font-bold mb-6 text-center text-white">
+            <div className="bg-gray-900/80 p-6 rounded-xl shadow-xl">
+              <h3 className="text-xl font-bold mb-4 text-center text-white">
                 My Resume
               </h3>
               <div className="aspect-[3/4] bg-gray-800 rounded-lg flex items-center justify-center mb-8 overflow-hidden relative shadow-lg">
@@ -67,11 +67,11 @@ export default function About() {
                   href="/NethmaDeSilvaResume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-emerald-600 text-white hover:bg-emerald-500 px-6 py-3 rounded-lg text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
+                  className="inline-flex items-center bg-emerald-600 text-white hover:bg-emerald-500 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
                 >
                   Download Resume
                   <svg
-                    className="w-5 h-5 ml-2"
+                    className="w-4 h-4 ml-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -91,14 +91,14 @@ export default function About() {
 
           {/* Right column - About text */}
           <div className="md:w-2/3">
-            <div className="space-y-8">
-              <p className="text-xl text-gray-200 leading-relaxed">
+            <div className="space-y-6">
+              <p className="text-base text-gray-200 leading-relaxed">
                 I&apos;m a Software Engineer with nearly 4 years of experience
                 across web, mobile, and backend, machine learning, DevOps, and
                 cybersecurity. I&apos;m graduating with a BSc in Computer
                 Science from the University of Westminster in July 2025.
               </p>
-              <p className="text-xl text-gray-200 leading-relaxed">
+              <p className="text-base text-gray-200 leading-relaxed">
                 Throughout my journey, I&apos;ve worked on diverse projects
                 ranging from AI-driven SaaS platforms and data-driven mobile
                 apps to cloud deployments and security-focused solutions. I
@@ -107,49 +107,49 @@ export default function About() {
                 edge of the field.
               </p>
 
-              <div className="pt-8 border-t border-gray-800">
-                <h3 className="text-2xl font-bold mb-6 text-white">
+              <div className="pt-6 border-t border-gray-800">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   What I&apos;m Up To Right Now
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-3">
                   <li className="flex items-start">
                     <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       Building Elevate, an AI-driven SaaS career development
                       platform for software engineers
                     </p>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       Developing Pingpals, a real-time event management and
                       organisation social app with my team
                     </p>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       Practicing daily LeetCode and mastering system design to
                       prepare for software engineering roles
                     </p>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       Exploring the latest developments in LLMs and their
                       applications in productivity tools
                     </p>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       Graduating with a First Class Honours in Computer Science
                       in July
                     </p>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       Looking for full-time software engineering opportunities
                       starting July 2025
                     </p>
@@ -157,11 +157,11 @@ export default function About() {
                 </ul>
               </div>
 
-              <div className="pt-8 border-t border-gray-800">
-                <h3 className="text-2xl font-bold mb-6 text-white">
+              <div className="pt-6 border-t border-gray-800">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   When I&apos;m Not Coding
                 </h3>
-                <p className="text-gray-200 text-lg leading-relaxed">
+                <p className="text-base text-gray-200 leading-relaxed">
                   Outside of coding, I love watching anime, UFC, and boxing.
                   I&apos;m passionate about working out and reading, and I also
                   work as a part-time chef. I&apos;m also still exploring

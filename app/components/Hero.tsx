@@ -42,14 +42,14 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center text-center p-8 pt-28 bg-black text-white"
+      className="min-h-screen flex flex-col justify-center items-center text-center p-6 pt-20 bg-black text-white"
     >
-      <div className="max-w-4xl">
+      <div className="max-w-3xl">
         <div className="relative inline-block">
           {/* Luffy's 3D Straw Hat positioned over "Hi" with adjusted position for tilt */}
           <ClientHat />
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 relative z-0 tracking-tight text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 relative z-0 tracking-tight text-white">
             Hi, my name is
             <br />
             <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
@@ -58,29 +58,29 @@ export default function Hero() {
           </h1>
         </div>
 
-        <h2 className="text-2xl md:text-4xl text-gray-200 mb-8 font-semibold"></h2>
-        <p className="text-xl md:text-2xl mb-12 text-gray-200 leading-relaxed max-w-3xl mx-auto">
+        <h2 className="text-xl md:text-3xl text-gray-200 mb-6 font-semibold"></h2>
+        <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed max-w-2xl mx-auto">
           I&apos;m a software developer specializing in building exceptional
           digital experiences. Currently, I&apos;m focused on building
           accessible, human-centered products with modern technologies.
         </p>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#projects"
             onClick={(e) => handleSmoothScroll(e, "projects")}
-            className="bg-emerald-600 text-white hover:bg-emerald-500 px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
+            className="bg-emerald-600 text-white hover:bg-emerald-500 px-6 py-3 rounded-lg text-base font-medium transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
           >
             Check out my work
           </a>
           <a
             href="#contact"
             onClick={(e) => handleSmoothScroll(e, "contact")}
-            className="border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600/10 px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300"
+            className="border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600/10 px-6 py-3 rounded-lg text-base font-medium transition-all duration-300"
           >
             Get in touch
           </a>
         </div>
-        <div className="mt-12 flex gap-8 justify-center">
+        <div className="mt-8 flex gap-6 justify-center">
           <a
             href="https://github.com"
             target="_blank"

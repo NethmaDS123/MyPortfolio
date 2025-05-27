@@ -43,28 +43,28 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 px-8 bg-black text-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 text-center tracking-tight">
+    <section id="skills" className="py-16 px-6 bg-black text-white">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center tracking-tight">
           My Skills
         </h2>
-        <p className="text-gray-200 text-lg text-center mb-16">
+        <p className="text-gray-200 text-sm text-center mb-12">
           Technologies and tools I work with
         </p>
 
-        <div className="space-y-16">
+        <div className="space-y-12">
           {/* Skills list */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-8">
             {skillGroups.map((group, index) => (
-              <div key={index} className="space-y-4">
-                <h3 className="text-2xl font-bold text-white border-b border-gray-800 pb-3">
+              <div key={index} className="space-y-3">
+                <h3 className="text-lg font-bold text-white border-b border-gray-800 pb-2">
                   {group.name}
                 </h3>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2">
                   {group.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="px-4 py-2 bg-gray-900 text-gray-200 hover:text-white hover:bg-gray-800 transition-colors rounded-lg text-base font-medium"
+                      className="px-3 py-1 bg-gray-900 text-gray-200 hover:text-white hover:bg-gray-800 transition-colors rounded-lg text-xs font-medium"
                     >
                       {skill}
                     </span>
@@ -75,11 +75,11 @@ export default function Skills() {
           </div>
 
           {/* Skill bars for key technologies */}
-          <div className="mt-24 pt-16 border-t border-gray-800">
-            <h3 className="text-3xl font-bold mb-12 text-center text-white">
+          <div className="mt-16 pt-12 border-t border-gray-800">
+            <h3 className="text-xl font-bold mb-8 text-center text-white">
               Key Expertise
             </h3>
-            <div className="space-y-8 max-w-3xl mx-auto">
+            <div className="space-y-6 max-w-3xl mx-auto">
               {[
                 { name: "Frontend Development", level: 85 },
                 { name: "Backend Development", level: 90 },
@@ -87,16 +87,16 @@ export default function Skills() {
                 { name: "DevOps & Cloud", level: 75 },
                 { name: "Machine Learning", level: 75 },
               ].map((skill, index) => (
-                <div key={index} className="space-y-3">
-                  <div className="flex justify-between text-lg">
+                <div key={index} className="space-y-2">
+                  <div className="flex justify-between text-sm">
                     <span className="text-gray-200 font-medium">
                       {skill.name}
                     </span>
                     <span className="text-emerald-400">{skill.level}%</span>
                   </div>
-                  <div className="w-full bg-gray-900 rounded-full h-3">
+                  <div className="w-full bg-gray-900 rounded-full h-2">
                     <div
-                      className="bg-gradient-to-r from-emerald-600 to-emerald-400 h-3 rounded-full transition-all duration-500"
+                      className="bg-gradient-to-r from-emerald-600 to-emerald-400 h-2 rounded-full transition-all duration-500"
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
