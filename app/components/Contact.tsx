@@ -103,7 +103,7 @@ export default function Contact() {
                 </h3>
                 <div className="flex space-x-4 justify-center">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/NethmaDS123"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gray-900/50 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
@@ -122,7 +122,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/nethma-de-silva-b34727212/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gray-900/50 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
@@ -137,7 +137,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/DevbyNDS"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gray-900/50 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300"

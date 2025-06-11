@@ -44,12 +44,12 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex flex-col justify-center items-center text-center p-6 pt-20 bg-black text-white"
     >
-      <div className="max-w-3xl">
+      <div className="max-w-4xl">
         <div className="relative inline-block">
           {/* Luffy's 3D Straw Hat positioned over "Hi" with adjusted position for tilt */}
           <ClientHat />
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 relative z-0 tracking-tight text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 relative z-0 tracking-tight text-white">
             Hi, my name is
             <br />
             <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
@@ -58,13 +58,16 @@ export default function Hero() {
           </h1>
         </div>
 
-        <h2 className="text-xl md:text-3xl text-gray-200 mb-6 font-semibold"></h2>
-        <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed max-w-2xl mx-auto">
+        <h2 className="text-xl md:text-2xl text-emerald-400 mb-2 font-medium">
+          Software Developer & AI Enthusiast
+        </h2>
+        <p className="text-base md:text-lg mb-8 text-gray-300 leading-relaxed max-w-3xl mx-auto">
           I&apos;m a software developer specializing in building exceptional
           digital experiences. Currently, I&apos;m focused on building
           accessible, human-centered products with modern technologies.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
             href="#projects"
             onClick={(e) => handleSmoothScroll(e, "projects")}
@@ -80,15 +83,16 @@ export default function Hero() {
             Get in touch
           </a>
         </div>
-        <div className="mt-8 flex gap-6 justify-center">
+
+        <div className="flex gap-6 justify-center">
           <a
-            href="https://github.com"
+            href="https://github.com/NethmaDS123"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-emerald-400 transition-colors"
           >
             <svg
-              className="w-7 h-7"
+              className="w-6 h-6"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -101,13 +105,13 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nethma-de-silva-b34727212/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-emerald-400 transition-colors"
           >
             <svg
-              className="w-7 h-7"
+              className="w-6 h-6"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"

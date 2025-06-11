@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <section id="about" className="py-16 px-6 bg-black text-white">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center tracking-tight">
           About Me
         </h2>
@@ -15,14 +15,14 @@ export default function About() {
           A little bit about myself and what I&apos;m up to
         </p>
 
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8">
           {/* Left column - Resume */}
-          <div className="md:w-1/3">
+          <div className="lg:w-1/3">
             <div className="bg-gray-900/80 p-6 rounded-xl shadow-xl">
               <h3 className="text-xl font-bold mb-4 text-center text-white">
                 My Resume
               </h3>
-              <div className="aspect-[3/4] bg-gray-800 rounded-lg flex items-center justify-center mb-8 overflow-hidden relative shadow-lg">
+              <div className="aspect-[3/4] bg-gray-800 rounded-lg flex items-center justify-center mb-6 overflow-hidden relative shadow-lg">
                 {/* Direct PDF embed */}
                 <iframe
                   src="/NethmaDeSilvaResume.pdf#view=FitH"
@@ -39,7 +39,7 @@ export default function About() {
                 {!pdfLoaded && (
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-400">
                     <svg
-                      className="animate-spin h-10 w-10 mb-3"
+                      className="animate-spin h-8 w-8 mb-3"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -58,7 +58,7 @@ export default function About() {
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                       ></path>
                     </svg>
-                    <span className="text-lg">Loading PDF...</span>
+                    <span className="text-sm">Loading PDF...</span>
                   </div>
                 )}
               </div>
@@ -89,23 +89,34 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right column - About text */}
-          <div className="md:w-2/3">
-            <div className="space-y-6">
-              <p className="text-base text-gray-200 leading-relaxed">
-                I&apos;m a Software Engineer with nearly 4 years of experience
-                across web, mobile, and backend, machine learning, DevOps, and
-                cybersecurity. I&apos;m graduating with a BSc in Computer
-                Science from the University of Westminster in July 2025.
-              </p>
-              <p className="text-base text-gray-200 leading-relaxed">
-                Throughout my journey, I&apos;ve worked on diverse projects
-                ranging from AI-driven SaaS platforms and data-driven mobile
-                apps to cloud deployments and security-focused solutions. I
-                thrive on solving complex problems, building robust systems, and
-                continuously learning new technologies to stay at the leading
-                edge of the field.
-              </p>
+          {/* Right column - About content */}
+          <div className="lg:w-2/3">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <p className="text-base text-gray-200 leading-relaxed">
+                  I&apos;m a Software Engineer with nearly{" "}
+                  <span className="text-emerald-400 font-medium">
+                    4 years of experience
+                  </span>{" "}
+                  across web, mobile, and backend, machine learning, DevOps, and
+                  cybersecurity. I&apos;m graduating with a{" "}
+                  <span className="text-emerald-400 font-medium">
+                    BSc in Computer Science
+                  </span>{" "}
+                  from the University of Westminster in July 2025.
+                </p>
+                <p className="text-base text-gray-200 leading-relaxed">
+                  Throughout my journey, I&apos;ve worked on diverse projects
+                  ranging from{" "}
+                  <span className="text-emerald-400 font-medium">
+                    AI-driven SaaS platforms
+                  </span>{" "}
+                  and data-driven mobile apps to cloud deployments and
+                  security-focused solutions. I thrive on solving complex
+                  problems, building robust systems, and continuously learning
+                  new technologies to stay at the leading edge of the field.
+                </p>
+              </div>
 
               <div className="pt-6 border-t border-gray-800">
                 <h3 className="text-xl font-bold mb-4 text-white">

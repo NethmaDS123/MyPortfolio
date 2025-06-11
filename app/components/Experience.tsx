@@ -3,7 +3,7 @@
 export default function Experience() {
   const experiences = [
     {
-      title: "Founder & CTO",
+      title: "Founder & Software Engineer",
       company: "Elevate",
       period: "October 2024 - Present",
       location: "London, UK",
@@ -24,10 +24,10 @@ export default function Experience() {
       ],
     },
     {
-      title: "Software Engineer",
+      title: "Software Engineer Intern",
       company: "BYNERY",
       period: "March 2024 - September 2024",
-      location: "Remote | Amsterdam",
+      location: "Remote | Amsterdam | Sri Lanka",
       description: [
         "Engineered scalable, responsive web platforms for diverse international clients using Next.js, TypeScript, and Tailwind CSS, collaborating remotely across multiple time zones using Agile/Scrum methods to ensure continuous delivery and rapid iteration.",
         "Developed a sophisticated, interactive geospatial mapping tool integrating environmental datasets, supporting seamless data visualization and analytics for over a 1,000 active user platform, utilizing Flask, JavaScript, and PostgreSQL.",
@@ -66,58 +66,65 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-16 px-6 bg-black text-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center tracking-tight">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center tracking-tight">
           My Experience
         </h2>
-        <p className="text-gray-200 text-sm text-center mb-12">
+        <p className="text-gray-200 text-base text-center mb-12">
           Professional journey and achievements
         </p>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div key={index} className="relative">
-              {/* Timeline dot and line */}
-              {index < experiences.length - 1 && (
-                <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-800/50 via-emerald-600/50 to-emerald-800/50"></div>
-              )}
-              <div className="absolute left-6 top-0 w-3 h-3 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-300 transform -translate-x-1/2 z-10 ring-4 ring-black"></div>
+              {/* Timeline */}
+              <div className="absolute left-0 top-0 bottom-0 w-px bg-gray-700"></div>
+              <div className="absolute left-0 top-6 w-3 h-3 bg-emerald-500 rounded-full transform -translate-x-1"></div>
 
-              <div className="flex flex-col md:flex-row gap-6 ml-12">
-                <div className="md:w-1/3">
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    {exp.title}
-                  </h3>
-                  <p className="text-lg text-emerald-400 font-medium mb-1">
-                    {exp.company}
-                  </p>
-                  <p className="text-sm text-gray-200 mb-1">{exp.period}</p>
-                  <p className="text-sm text-gray-300">{exp.location}</p>
-                </div>
-                <div className="md:w-2/3">
-                  <div className="space-y-3">
+              <div className="ml-8">
+                <div className="bg-gray-900/80 p-6 rounded-lg shadow-lg">
+                  <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-1">
+                        {exp.title}
+                      </h3>
+                      <p className="text-lg text-emerald-400 font-medium">
+                        {exp.company}
+                      </p>
+                    </div>
+                    <div className="mt-2 lg:mt-0 lg:text-right">
+                      <p className="text-sm text-gray-300 bg-gray-800 px-3 py-1 rounded-full inline-block">
+                        {exp.period}
+                      </p>
+                      <p className="text-sm text-gray-400 mt-1">
+                        {exp.location}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 mb-4">
                     {exp.description.map((item, i) => (
-                      <div
-                        key={i}
-                        className="flex group hover:bg-gray-900/50 p-2 rounded-lg transition-all duration-300"
-                      >
-                        <div className="mr-3 text-emerald-400 mt-1">▹</div>
-                        <p className="text-gray-200 text-sm leading-relaxed">
+                      <div key={i} className="flex items-start">
+                        <div className="mr-3 text-emerald-400 mt-1.5">▹</div>
+                        <p className="text-gray-200 text-base leading-relaxed">
                           {item}
                         </p>
                       </div>
                     ))}
                   </div>
+
                   {exp.technologies.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {exp.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-gray-800 text-gray-200 rounded-lg text-xs font-medium hover:bg-gray-700 hover:text-white transition-all duration-300"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                    <div className="pt-4 border-t border-gray-800">
+                      <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-3 py-1 bg-gray-800 text-gray-300 rounded-md text-sm font-medium border border-gray-700 hover:border-emerald-500/50 hover:text-emerald-300 transition-colors"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -128,28 +135,36 @@ export default function Experience() {
 
         {/* Awards Section */}
         {awards.length > 0 && (
-          <div className="mt-16">
-            <h3 className="text-xl font-bold mb-8 text-center text-white">
+          <div className="mt-16 pt-8 border-t border-gray-800">
+            <h3 className="text-2xl font-bold mb-8 text-center text-white">
               Awards & Recognition
             </h3>
-            {awards.map((award, index) => (
-              <div
-                key={index}
-                className="bg-gray-900/80 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="flex flex-col md:flex-row justify-between md:items-center mb-3">
-                  <h4 className="text-lg font-bold text-white mb-2 md:mb-0">
-                    {award.title}
-                  </h4>
-                  <div className="text-emerald-400 text-sm font-medium">
-                    {award.location} - {award.date}
+
+            <div className="max-w-4xl mx-auto">
+              {awards.map((award, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-900/80 rounded-lg p-6 shadow-lg"
+                >
+                  <div className="flex flex-col lg:flex-row justify-between lg:items-center mb-3">
+                    <h4 className="text-xl font-bold text-white mb-2 lg:mb-0">
+                      {award.title}
+                    </h4>
+                    <div className="flex flex-col lg:items-end space-y-1">
+                      <span className="text-emerald-400 text-base font-medium">
+                        {award.location}
+                      </span>
+                      <span className="text-gray-400 text-sm bg-gray-800 px-3 py-1 rounded-full">
+                        {award.date}
+                      </span>
+                    </div>
                   </div>
+                  <p className="text-gray-200 text-base leading-relaxed">
+                    {award.description}
+                  </p>
                 </div>
-                <p className="text-gray-200 text-sm leading-relaxed">
-                  {award.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </div>

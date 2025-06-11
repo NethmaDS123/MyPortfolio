@@ -2,11 +2,11 @@ export default function Skills() {
   const skillGroups = [
     {
       name: "Programming Languages",
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "Dart"],
+      skills: ["Java", "Python", "JavaScript", "TypeScript", "Dart", "SQL"],
     },
     {
       name: "Frontend",
-      skills: ["React", "NextJS", "Tailwind CSS", "jQuery"],
+      skills: ["React", "NextJS", "Tailwind CSS", "jQuery", "HTML", "CSS"],
     },
     {
       name: "Backend",
@@ -18,7 +18,14 @@ export default function Skills() {
     },
     {
       name: "Databases",
-      skills: ["MongoDB", "PostgreSQL", "SQLite", "Firebase"],
+      skills: [
+        "MongoDB",
+        "PostgreSQL",
+        "SQLite",
+        "NoSQL",
+        "Firebase",
+        "Vector Databases",
+      ],
     },
     {
       name: "Cloud & Storage",
@@ -30,7 +37,13 @@ export default function Skills() {
     },
     {
       name: "AI & ML",
-      skills: ["TensorFlow", "LLMs", "Machine Learning", "Neural Networks"],
+      skills: [
+        "TensorFlow",
+        "LLMs",
+        "Machine Learning",
+        "Neural Networks",
+        "RAG pipelines",
+      ],
     },
     {
       name: "Architecture",
@@ -38,7 +51,12 @@ export default function Skills() {
     },
     {
       name: "Other",
-      skills: ["Cybersecurity", "Unit Testing", "Documentation"],
+      skills: [
+        "Cybersecurity",
+        "Unit Testing",
+        "Documentation",
+        "System Design",
+      ],
     },
   ];
 
@@ -85,7 +103,7 @@ export default function Skills() {
                 { name: "Backend Development", level: 90 },
                 { name: "Mobile Development", level: 85 },
                 { name: "DevOps & Cloud", level: 75 },
-                { name: "Machine Learning", level: 75 },
+                { name: "AI & Machine Learning", level: 80 },
               ].map((skill, index) => (
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between text-sm">
