@@ -12,7 +12,7 @@ export default function Contact() {
         </p>
 
         <div className="flex flex-col items-center justify-center">
-          <div className="mb-8 w-full max-w-md">
+          <div className="mb-8 w-full max-w-sm">
             <div className="bg-gradient-to-br from-gray-900 to-black p-[1px] rounded-lg">
               <div className="bg-black rounded-lg p-4">
                 <h3 className="text-lg font-bold mb-4 relative pb-2">
@@ -94,7 +94,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-sm">
             <div className="bg-gradient-to-br from-gray-900 to-black p-[1px] rounded-lg">
               <div className="bg-black rounded-lg p-4">
                 <h3 className="text-lg font-bold mb-4 relative pb-2">

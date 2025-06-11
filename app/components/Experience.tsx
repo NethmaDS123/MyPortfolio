@@ -66,7 +66,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-16 px-6 bg-black text-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center tracking-tight">
           My Experience
         </h2>
@@ -140,7 +140,7 @@ export default function Experience() {
               Awards & Recognition
             </h3>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               {awards.map((award, index) => (
                 <div
                   key={index}

@@ -33,7 +33,7 @@ export default function Projects() {
   const featuredProjects: Project[] = [
     {
       title: "ELEVATE",
-      subtitle: "Founder & CTO",
+      subtitle: "Founder",
       period: "October 2024 - Present",
       location: "London, UK",
       description: [
@@ -57,7 +57,7 @@ export default function Projects() {
     },
     {
       title: "WILDLIFE CONNECT",
-      subtitle: "Frontend | Backend",
+      subtitle: "Team Lead",
       period: "October 2023 - April 2024",
       location: "Colombo, SL",
       description: [
@@ -98,7 +98,7 @@ export default function Projects() {
     },
     {
       title: "TRAVELTALES",
-      subtitle: "Full-Stack Tourism Blog Platform",
+      subtitle: "Full-Stack Developer",
       period: "2024",
       location: "London, UK",
       description: [
@@ -158,7 +158,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 px-6 bg-black text-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center tracking-tight">
           Featured Projects
         </h2>
